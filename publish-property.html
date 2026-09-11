@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"tertiary-fixed-dim":"#68dba9","surface-bright":"#faf8ff","on-tertiary-container":"#42b989","surface-variant":"#dae2fd","on-error":"#ffffff","tertiary":"#002c1c","on-primary-container":"#81a7d9","on-secondary":"#ffffff","surface-container-lowest":"#ffffff","surface":"#faf8ff","surface-container-highest":"#dae2fd","inverse-surface":"#283044","outline":"#737780","secondary":"#0d50d5","surface-container":"#eaedff","error-container":"#ffdad6","on-tertiary-fixed":"#002114","tertiary-fixed":"#85f8c4","error":"#ba1a1a","on-surface":"#131b2e","on-primary":"#ffffff","secondary-fixed":"#dbe1ff","surface-tint":"#39608e","primary-fixed-dim":"#a3c9fd","surface-dim":"#d2d9f4","on-error-container":"#93000a","secondary-fixed-dim":"#b5c4ff","primary-fixed":"#d2e4ff","inverse-on-surface":"#eef0ff","primary-container":"#0b3c68","on-primary-fixed":"#001c38","tertiary-container":"#00442d","on-tertiary":"#ffffff","inverse-primary":"#a3c9fd","on-tertiary-fixed-variant":"#005137","outline-variant":"#c3c6d0","surface-container-high":"#e2e7ff","on-secondary-container":"#fefcff","background":"#faf8ff","primary":"#002647","secondary-container":"#386bef","on-primary-fixed-variant":"#1d4875","on-secondary-fixed-variant":"#003dab","on-surface-variant":"#42474f","on-secondary-fixed":"#00174d","surface-container-low":"#f2f3ff","on-background":"#131b2e"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter-mobile":"1rem","space-md":"1rem","space-lg":"1.5rem","space-xl":"2rem","space-4xl":"6rem","space-2xs":"0.25rem","gutter-desktop":"1.5rem","space-3xl":"4rem","space-2xl":"3rem","space-sm":"0.75rem","container-max":"80rem","space-xs":"0.5rem"},"fontFamily":{"body-md":["Inter"],"label-md":["Inter"],"display-mobile":["Plus Jakarta Sans"],"label-lg":["Inter"],"headline-md":["Plus Jakarta Sans"],"body-sm":["Inter"],"headline-xl":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"price-display":["Plus Jakarta Sans"],"label-caps":["Inter"],"display":["Plus Jakarta Sans"],"body-lg":["Inter"],"headline-sm":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"]},"fontSize":{"body-md":["15px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"display-mobile":["34px",{"lineHeight":"40px","letterSpacing":"-0.025em","fontWeight":"800"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.025em","fontWeight":"700"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"700"}],"price-display":["26px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"800"}],"label-caps":["11px",{"lineHeight":"16px","letterSpacing":"0.06em","fontWeight":"700"}],"display":["48px",{"lineHeight":"56px","letterSpacing":"-0.03em","fontWeight":"800"}],"body-lg":["18px",{"lineHeight":"28px","letterSpacing":"-0.005em","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"700"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased">
+<!-- SIDEBAR (RESPONSIVE: DRAWER ON MOBILE, FIXED ON DESKTOP) -->
+<aside id="sidebar" class="fixed left-0 top-0 h-full w-72 bg-primary text-on-primary z-50 flex flex-col justify-between shadow-2xl lg:shadow-[0_1px_8px_rgba(0,0,0,0.06)] transform -translate-x-full lg:translate-x-0 transition-transform duration-300 ease-in-out">
+  <div class="flex flex-col">
+    <!-- Brand / Header -->
+    <div class="h-20 px-space-lg flex items-center justify-between bg-primary-container/40">
+      <a href="index.html" class="flex items-center gap-space-sm">
+        <img alt="Brand logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UQgco9JbYtqWDD3YpwIC7JocdJOZwDty6LHKgacDAMipjj_-AudL_E8c-34hSwZlpK9OyNO4LR8xi1_FWAQr2BSJqKg37arjyVWNg_dLHpbccK3RqML0M6FH5oTR9APEmvV_H0q4suSd0-3QviMX8tN8Z7qjrQGTZVTUxB0muOvWjVKCP6mc-msuWmPqni9Gpib5JkWq0ywqBwczDqth4uLjSWjyhpkMmRywhWj5l0evTudfZLKBDwjO6l">
+        <div class="flex flex-col">
+          <span class="font-headline-sm text-headline-sm font-bold tracking-tight text-on-primary leading-none">VERITAS PRIME</span>
+          <span class="font-label-caps text-label-caps text-primary-fixed-dim uppercase tracking-wider mt-1">Institutional Portal</span>
+        </div>
+      </a>
+      <button type="button" id="sidebar-close-btn" class="lg:hidden p-1.5 rounded-lg text-primary-fixed hover:bg-primary-container transition-colors" aria-label="Close sidebar">
+        <span class="material-symbols-outlined text-[22px]">close</span>
+      </button>
+    </div>
+
+    <!-- Core Operations Nav -->
+    <div class="px-space-md pt-space-lg">
+      <div class="px-space-sm pb-space-xs font-label-caps text-label-caps text-primary-fixed-dim uppercase tracking-wider opacity-75">Core Operations</div>
+      <nav class="flex flex-col gap-1">
+        <a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-primary-fixed hover:bg-primary-container hover:text-on-primary transition-all duration-150" href="admin-dashboard.html">
+          <span class="material-symbols-outlined text-[20px]">grid_view</span>
+          <span>Dashboard Overview</span>
+        </a>
+        <a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-primary-fixed hover:bg-primary-container hover:text-on-primary transition-all duration-150" href="property-listings.html">
+          <span class="material-symbols-outlined text-[20px]">holiday_village</span>
+          <span>Property Listings</span>
+        </a>
+        <a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm transition-all duration-150 bg-secondary text-on-secondary font-label-lg rounded-lg shadow-sm" href="publish-property.html">
+          <span class="material-symbols-outlined text-[20px]">add_business</span>
+          <span>Publish New Property</span>
+        </a>
+        <a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-primary-fixed hover:bg-primary-container hover:text-on-primary transition-all duration-150" href="contact-and-inspection.html">
+          <span class="material-symbols-outlined text-[20px]">event_available</span>
+          <span>Inspection Rosters</span>
+        </a>
+      </nav>
+    </div>
+
+    <!-- Cadastral & Growth Nav -->
+    <div class="px-space-md pt-space-lg">
+      <div class="px-space-sm pb-space-xs font-label-caps text-label-caps text-primary-fixed-dim uppercase tracking-wider opacity-75">Cadastral &amp; Growth</div>
+      <nav class="flex flex-col gap-1">
+        <a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-primary-fixed hover:bg-primary-container hover:text-on-primary transition-all duration-150" href="admin-dashboard.html">
+          <span class="material-symbols-outlined text-[20px]">price_change</span>
+          <span>Discounts &amp; Promo</span>
+        </a>
+        <a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-primary-fixed hover:bg-primary-container hover:text-on-primary transition-all duration-150" href="property-details.html">
+          <span class="material-symbols-outlined text-[20px]">verified</span>
+          <span>Cadastral Dossiers</span>
+        </a>
+        <a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-primary-fixed hover:bg-primary-container hover:text-on-primary transition-all duration-150" href="index.html">
+          <span class="material-symbols-outlined text-[20px]">public</span>
+          <span>Public Landing Page</span>
+        </a>
+      </nav>
+    </div>
+  </div>
+
+  <div class="p-space-md m-space-md rounded-lg bg-primary-container/60">
+    <div class="flex items-center justify-between pb-space-xs">
+      <span class="font-label-caps text-label-caps text-primary-fixed-dim uppercase">Registry Conduit</span>
+      <span class="h-2 w-2 rounded-full bg-tertiary-fixed animate-pulse"></span>
+    </div>
+    <div class="font-body-sm text-body-sm text-surface-container-high font-medium">Alausa Cadastral: Online</div>
+    <div class="font-label-caps text-label-caps text-primary-fixed-dim mt-0.5">SCUML Reg #084920</div>
+  </div>
+</aside>
+
+<!-- Mobile Sidebar Backdrop -->
+<div id="sidebar-backdrop" class="fixed inset-0 bg-slate-950/60 backdrop-blur-xs z-40 hidden lg:hidden transition-opacity duration-300"></div>
+
+<!-- MAIN WRAPPER (RESPONSIVE PADDING) -->
+<div class="pl-0 lg:pl-72 flex flex-col min-h-screen w-full transition-all duration-300">
+  <!-- TOP HEADER (RESPONSIVE) -->
+  <header class="fixed top-0 left-0 lg:left-72 right-0 h-20 bg-surface-container-lowest/95 backdrop-blur-xl z-30 px-4 sm:px-space-lg flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+    <div class="flex items-center gap-space-sm">
+      <!-- Mobile Hamburger Toggle -->
+      <button type="button" id="sidebar-toggle-btn" class="lg:hidden p-2 -ml-1 rounded-lg text-on-surface hover:bg-surface-container transition-colors" aria-label="Toggle navigation menu">
+        <span class="material-symbols-outlined text-[24px]">menu</span>
+      </button>
+
+      <!-- Currency Rate Pill -->
+      <div class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container-low text-xs sm:text-sm">
+        <span class="material-symbols-outlined text-secondary text-[18px]">currency_exchange</span>
+        <span class="hidden sm:inline font-label-caps text-label-caps text-on-surface-variant font-bold">USD/NGN:</span>
+        <span class="font-label-md text-label-md text-on-surface font-semibold">₦1,495.50</span>
+        <span class="hidden sm:inline font-label-caps text-label-caps text-on-tertiary-container bg-tertiary-fixed/30 px-1.5 py-0.5 rounded font-bold">CBN FIX</span>
+      </div>
+
+      <!-- Compliance Pill -->
+      <div class="hidden xl:flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container-low">
+        <span class="material-symbols-outlined text-on-tertiary-container text-[18px]">gshield</span>
+        <span class="font-label-caps text-label-caps text-on-surface-variant font-bold">COMPLIANCE:</span>
+        <span class="font-label-md text-label-md text-on-surface">EFCC SCUML &amp; Lagos Alausa Synced</span>
+        <span class="h-2 w-2 rounded-full bg-tertiary-fixed"></span>
+      </div>
+    </div>
+
+    <!-- Header Actions & Profile -->
+    <div class="flex items-center gap-2 sm:gap-space-md">
+      <a class="flex items-center gap-1.5 bg-primary text-on-primary px-3 sm:px-space-md py-2 rounded-lg font-label-lg text-label-lg hover:bg-secondary hover:text-on-secondary transition-all shadow-sm" href="publish-property.html">
+        <span class="material-symbols-outlined text-[18px]">add</span>
+        <span class="hidden sm:inline">New Listing</span>
+      </a>
+      <div class="flex items-center gap-1">
+        <button aria-label="Notifications" class="h-9 w-9 sm:h-10 sm:w-10 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all relative" type="button">
+          <span class="material-symbols-outlined text-[20px]">notifications</span>
+          <span class="absolute top-2 right-2 h-2 w-2 rounded-full bg-secondary ring-2 ring-surface-container-lowest"></span>
+        </button>
+        <button aria-label="System Logs" class="hidden sm:flex h-10 w-10 items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" type="button">
+          <span class="material-symbols-outlined text-[20px]">receipt_long</span>
+        </button>
+      </div>
+      <div class="h-8 w-px bg-surface-variant hidden sm:block"></div>
+      <div class="flex items-center gap-space-sm pl-space-2xs">
+        <div class="flex flex-col text-right hidden md:flex">
+          <span class="font-label-lg text-label-lg text-on-surface font-bold leading-tight">Arc. Babatunde Adeleke</span>
+          <span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Admin / Managing Partner</span>
+        </div>
+        <img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-surface-container-high" src="https://lh3.googleusercontent.com/aida/AEtjO1UZUhPgYyug7KziOUEQsDdHIB9D8amkl7JlESqdPjcmLs9FKA6Ja3jJjxUh_SqrHdigJ4t-fGF3pG1O0iybQbqMOhwTMowBaFBB7egEdtmg2qT0D32ClbJ46AeOPI9WzfzPJ_h2g1PE6MHLb-HJTsBae9ASUIS0jpFaWXA5Nh48OWEAIwEqcCr4yezm5INR8fUXq9L_ohJrmbkYc-WDg5EL6V_7LJSV62pVafw38HvoNYW6_9o8I9Z6bWw"/>
+      </div>
+    </div>
+  </header>
+  <main class="flex-1 pt-20 w-full px-4 sm:px-space-lg bg-surface">
+    <div class="flex flex-col w-full pb-space-4xl">
+<!-- Top Operational Sub-Bar & Breadcrumbs -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md py-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-xs font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">
+<a class="hover:text-secondary transition-colors" href="admin-dashboard.html">Admin Portal</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<a class="hover:text-secondary transition-colors" href="property-listings.html">Land Inventory</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-secondary font-bold">Publish Listing</span>
+</div>
+<div class="flex items-center gap-space-sm mt-0.5">
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight font-extrabold">New Cadastral Listing Dossier</h1>
+<div class="flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-surface-container-high text-on-surface">
+<span class="h-2 w-2 rounded-full bg-secondary-container animate-ping"></span>
+<span class="font-label-caps text-label-caps font-bold">DRAFT #LND-2025-089</span>
+</div>
+</div>
+</div>
+<!-- Quick Action Bar -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<button onclick="handleSaveDraft()" class="flex items-center gap-1.5 px-3 sm:px-space-md py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>Save Draft</span>
+</button>
+<a href="property-details.html" target="_blank" class="flex items-center gap-1.5 px-3 sm:px-space-md py-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-secondary font-label-lg text-label-lg transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+<span>Marketplace Preview</span>
+</a>
+<button onclick="handlePublish()" class="flex items-center gap-1.5 px-3 sm:px-space-md py-2 rounded-lg bg-primary hover:bg-secondary text-on-primary font-label-lg text-label-lg transition-all shadow-md" type="button">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span>Validate &amp; Publish</span>
+</button>
+</div>
+</div>
+<!-- Conveyancing Multi-Step Progress Tracker -->
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-sm p-space-md my-space-md">
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md relative">
+<!-- Step 1 (Completed) -->
+<div class="flex items-center gap-space-sm group cursor-pointer">
+<div class="w-10 h-10 rounded-lg bg-tertiary-container text-on-tertiary flex items-center justify-center font-bold text-label-lg shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-caps text-label-caps text-on-tertiary-container uppercase tracking-wider font-bold">Step 01 • Complete</span>
+<span class="font-headline-sm text-[15px] font-bold text-on-surface truncate">Estate Corridor &amp; Phase</span>
+</div>
+</div>
+<!-- Step 2 (Active Focus) -->
+<div class="flex items-center gap-space-sm group cursor-pointer">
+<div class="w-10 h-10 rounded-lg bg-secondary text-on-secondary flex items-center justify-center font-bold text-label-lg shrink-0 shadow-sm ring-4 ring-secondary-fixed/40">
+<span class="font-display font-extrabold text-label-lg">02</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-wider font-bold">Step 02 • Active</span>
+<span class="font-headline-sm text-[15px] font-bold text-on-surface truncate">Cadastral &amp; Topography</span>
+</div>
+</div>
+<!-- Step 3 (Pending) -->
+<div class="flex items-center gap-space-sm group cursor-pointer opacity-75 hover:opacity-100 transition-opacity">
+<div class="w-10 h-10 rounded-lg bg-surface-container text-on-surface-variant flex items-center justify-center font-bold text-label-lg shrink-0">
+<span>03</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Step 03 • Legal Title</span>
+<span class="font-headline-sm text-[15px] font-semibold text-on-surface truncate">Deed &amp; Gazette Verification</span>
+</div>
+</div>
+<!-- Step 4 (Pending) -->
+<div class="flex items-center gap-space-sm group cursor-pointer opacity-75 hover:opacity-100 transition-opacity">
+<div class="w-10 h-10 rounded-lg bg-surface-container text-on-surface-variant flex items-center justify-center font-bold text-label-lg shrink-0">
+<span>04</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Step 04 • Financials</span>
+<span class="font-headline-sm text-[15px] font-semibold text-on-surface truncate">Pricing, Levies &amp; Escrow</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Administrative Workbench Grid (65% Forms / 35% Sticky Inspector Preview) -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT 65% FORM DOSSIER -->
+<div class="xl:col-span-8 flex flex-col gap-space-lg">
+<!-- SECTION 1: ESTATE & GEOGRAPHICAL CORRIDOR -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between pb-space-md mb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="p-2 rounded-lg bg-surface-container text-secondary material-symbols-outlined text-[24px]">pin_drop</span>
+<div>
+<h2 class="font-headline-md text-headline-md font-bold text-primary">Estate Identity &amp; Statutory Corridor</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Formal cadastral registration name matching Alausa Lands Directorate gazette index.</p>
+</div>
+</div>
+<span class="font-label-caps text-label-caps px-2 py-1 rounded bg-secondary-fixed text-primary font-bold">REQUIRED FIELDSET</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1.5 md:col-span-2">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold flex items-center justify-between">
+<span>Official Estate Title <span class="text-error">*</span></span>
+<span class="font-label-caps text-label-caps text-on-surface-variant font-normal">Displayed prominently across institutional brochures</span>
+</label>
+<input class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-md focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-secondary transition-all shadow-inner" placeholder="e.g. Imperial Horizon Estate Phase II" type="text" value="The Sovereign Heritage Crest &amp; Golf Resort"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold">Corridor / Regional Zone <span class="text-error">*</span></label>
+<select class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-md focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-secondary transition-all">
+<option selected="">Epe Expressway Megacity Corridor, Lagos</option>
+<option>Ibeju-Lekki Free Trade Zone / Deep Sea Port Axis</option>
+<option>Guzape Phase II Diplomatic Enclave, Abuja FCT</option>
+<option>Alaro City / Lekki-Epe Industrial Growth Corridor</option>
+<option>Moniya Inland Dry Port Axis, Ibadan, Oyo</option>
+</select>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold">Local Government Area (LGA)</label>
+<div class="flex gap-2">
+<input class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-md focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-secondary transition-all" type="text" value="Epe LGA, Lagos State"/>
+<button class="px-3 py-2 bg-surface-container text-secondary rounded-lg hover:bg-surface-container-high transition-colors" title="Fetch Alausa Local Cadastre" type="button">
+<span class="material-symbols-outlined text-[20px]">travel_explore</span>
+</button>
+</div>
+</div>
+<!-- GPS Survey Waypoints & RTK Sync -->
+<div class="flex flex-col gap-2 md:col-span-2 p-space-md bg-surface-container-low rounded-lg">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">satellite_alt</span>
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Precise Statutory GPS Waypoints (UTM Minna Datum)</span>
+</div>
+<button class="flex items-center gap-1.5 px-space-sm py-1 rounded bg-secondary text-on-secondary font-label-md text-label-md hover:bg-primary transition-all" type="button">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+<span>Sync Handheld RTK GNSS Receiver</span>
+</button>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm mt-1">
+<div>
+<span class="font-label-caps text-label-caps text-on-surface-variant font-medium">Latitude (N)</span>
+<input class="w-full mt-1 px-3 py-2 rounded bg-surface-container-lowest text-on-surface font-body-sm font-mono focus:ring-1 focus:ring-secondary outline-none" type="text" value="6°35'44.2&quot;N (6.595611)"/>
+</div>
+<div>
+<span class="font-label-caps text-label-caps text-on-surface-variant font-medium">Longitude (E)</span>
+<input class="w-full mt-1 px-3 py-2 rounded bg-surface-container-lowest text-on-surface font-body-sm font-mono focus:ring-1 focus:ring-secondary outline-none" type="text" value="3°59'12.8&quot;E (3.986889)"/>
+</div>
+<div>
+<span class="font-label-caps text-label-caps text-on-surface-variant font-medium">Cadastral Pillar ID</span>
+<input class="w-full mt-1 px-3 py-2 rounded bg-surface-container-lowest text-on-surface font-body-sm font-mono font-bold text-secondary focus:ring-1 focus:ring-secondary outline-none" type="text" value="LS-EP-2024-PL409"/>
+</div>
+</div>
+</div>
+<!-- Development Stage / Phase -->
+<div class="flex flex-col gap-2 md:col-span-2">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold">Development Phase &amp; Allocation Urgency</label>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-sm">
+<label class="flex flex-col p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer transition-all">
+<div class="flex items-center justify-between pb-1">
+<span class="font-label-caps text-label-caps font-bold text-on-surface-variant">PHASE 01</span>
+<input class="accent-secondary h-4 w-4" name="dev-stage" type="radio"/>
+</div>
+<span class="font-label-md text-label-md font-bold text-on-surface">Pegging &amp; Clearing</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[12px] mt-0.5">Bulldozing &amp; perimeter beaconing</span>
+</label>
+<label class="flex flex-col p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer transition-all">
+<div class="flex items-center justify-between pb-1">
+<span class="font-label-caps text-label-caps font-bold text-on-surface-variant">PHASE 02</span>
+<input class="accent-secondary h-4 w-4" name="dev-stage" type="radio"/>
+</div>
+<span class="font-label-md text-label-md font-bold text-on-surface">Drainage &amp; Gatehouse</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[12px] mt-0.5">Civil works in active mobilization</span>
+</label>
+<label class="flex flex-col p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high cursor-pointer transition-all ring-2 ring-secondary">
+<div class="flex items-center justify-between pb-1">
+<span class="font-label-caps text-label-caps font-bold text-secondary">PHASE 03 • READY</span>
+<input checked="" class="accent-secondary h-4 w-4" name="dev-stage" type="radio"/>
+</div>
+<span class="font-label-md text-label-md font-bold text-primary">Immediate Physical Allocation</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[12px] mt-0.5">Instant plot layout hand-over</span>
+</label>
+<label class="flex flex-col p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer transition-all">
+<div class="flex items-center justify-between pb-1">
+<span class="font-label-caps text-label-caps font-bold text-on-surface-variant">BANKING</span>
+<input class="accent-secondary h-4 w-4" name="dev-stage" type="radio"/>
+</div>
+<span class="font-label-md text-label-md font-bold text-on-surface">Capital Land Banking</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[12px] mt-0.5">Strategic 5-year capital appreciation</span>
+</label>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 2: CADASTRAL DEMARCATION & TOPOGRAPHY -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between pb-space-md mb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="p-2 rounded-lg bg-surface-container text-secondary material-symbols-outlined text-[24px]">architecture</span>
+<div>
+<h2 class="font-headline-md text-headline-md font-bold text-primary">Demarcations, Topography &amp; Infrastructure</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Define surveyed plot layouts, soil load-bearing capacity, and verified site amenities.</p>
+</div>
+</div>
+<span class="font-label-caps text-label-caps px-2 py-1 rounded bg-tertiary-fixed text-on-tertiary-fixed font-bold">SOIL CERTIFIED</span>
+</div>
+<!-- Available Plot Demarcations with Inventory Counters -->
+<div class="flex flex-col gap-space-sm">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Available Standard Plot Demarcations</span>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- 300 SQM -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between gap-space-sm">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">300 SQM</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Starter Executive Villa Plot</p>
+</div>
+<input checked="" class="accent-secondary h-5 w-5 mt-1" type="checkbox"/>
+</div>
+<div class="flex items-center justify-between bg-surface-container-lowest px-space-sm py-1.5 rounded-lg">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Allocated Inventory</span>
+<div class="flex items-center gap-1.5">
+<input class="w-16 text-right font-headline-sm text-[16px] font-bold text-primary bg-transparent outline-none" type="number" value="18"/>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Plots</span>
+</div>
+</div>
+</div>
+<!-- 500 SQM -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col justify-between gap-space-sm shadow-sm ring-1 ring-secondary">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">500 SQM</span>
+<p class="font-body-sm text-body-sm text-secondary font-semibold">Standard Premium Plot</p>
+</div>
+<input checked="" class="accent-secondary h-5 w-5 mt-1" type="checkbox"/>
+</div>
+<div class="flex items-center justify-between bg-surface-container-lowest px-space-sm py-1.5 rounded-lg">
+<span class="font-label-caps text-label-caps text-secondary font-bold uppercase">Allocated Inventory</span>
+<div class="flex items-center gap-1.5">
+<input class="w-16 text-right font-headline-sm text-[16px] font-bold text-secondary bg-transparent outline-none" type="number" value="42"/>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Plots</span>
+</div>
+</div>
+</div>
+<!-- 1,000 SQM -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between gap-space-sm">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">1,000 SQM</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Commercial / Institutional Acreage</p>
+</div>
+<input checked="" class="accent-secondary h-5 w-5 mt-1" type="checkbox"/>
+</div>
+<div class="flex items-center justify-between bg-surface-container-lowest px-space-sm py-1.5 rounded-lg">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Allocated Inventory</span>
+<div class="flex items-center gap-1.5">
+<input class="w-16 text-right font-headline-sm text-[16px] font-bold text-primary bg-transparent outline-none" type="number" value="6"/>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Plots</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Topography Grading (Crucial for Lagos/Epe conveyancing) -->
+<div class="flex flex-col gap-2 mt-space-lg">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold flex items-center justify-between">
+<span>Certified Topographical &amp; Hydrological Grade</span>
+<span class="font-label-caps text-label-caps text-on-tertiary-container bg-tertiary-fixed/30 px-2 py-0.5 rounded font-bold">100% DRY TERRAIN</span>
+</label>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<label class="flex flex-col p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high cursor-pointer transition-all ring-1 ring-secondary">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-primary">100% Dry Table Land</span>
+<input checked="" class="accent-secondary h-4 w-4" name="topography" type="radio"/>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[12px] mt-1">Zero sandfilling expenditure required. Solid virgin earth with immediate construction capability.</span>
+</label>
+<label class="flex flex-col p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-on-surface">Elevated Hilltop Ridge</span>
+<input class="accent-secondary h-4 w-4" name="topography" type="radio"/>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[12px] mt-1">Natural gravity drainage system. Commanding territorial views with rock &amp; gravel underbedding.</span>
+</label>
+<label class="flex flex-col p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-on-surface">Reclaimed &amp; Compacted</span>
+<input class="accent-secondary h-4 w-4" name="topography" type="radio"/>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[12px] mt-1">Sandfilled, compacted, with geo-technical soil test report and civil engineering sign-off.</span>
+</label>
+</div>
+</div>
+<!-- Verified Estate Infrastructure Checklist -->
+<div class="flex flex-col gap-2 mt-space-lg">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Institutional Infrastructure Matrix (Verified On-Ground)</span>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-space-sm">
+<label class="flex items-center gap-2 p-space-sm bg-surface-container-low rounded-lg hover:bg-surface-container cursor-pointer">
+<input checked="" class="accent-secondary h-4 w-4" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Perimeter Fencing &amp; Biometric Gate</span>
+</label>
+<label class="flex items-center gap-2 p-space-sm bg-surface-container-low rounded-lg hover:bg-surface-container cursor-pointer">
+<input checked="" class="accent-secondary h-4 w-4" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Paved Interlocking Spine Road</span>
+</label>
+<label class="flex items-center gap-2 p-space-sm bg-surface-container-low rounded-lg hover:bg-surface-container cursor-pointer">
+<input checked="" class="accent-secondary h-4 w-4" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Underground Hydraulic Drainage</span>
+</label>
+<label class="flex items-center gap-2 p-space-sm bg-surface-container-low rounded-lg hover:bg-surface-container cursor-pointer">
+<input checked="" class="accent-secondary h-4 w-4" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Dedicated Transformer &amp; Solar Grid</span>
+</label>
+<label class="flex items-center gap-2 p-space-sm bg-surface-container-low rounded-lg hover:bg-surface-container cursor-pointer">
+<input checked="" class="accent-secondary h-4 w-4" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Numbered Survey Concrete Beacons</span>
+</label>
+<label class="flex items-center gap-2 p-space-sm bg-surface-container-low rounded-lg hover:bg-surface-container cursor-pointer">
+<input checked="" class="accent-secondary h-4 w-4" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">24/7 Armed Sovereign Security Post</span>
+</label>
+</div>
+</div>
+</div>
+<!-- SECTION 3: LEGAL TITLE & STATUTORY CONVEYANCING -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between pb-space-md mb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="p-2 rounded-lg bg-surface-container text-secondary material-symbols-outlined text-[24px]">verified</span>
+<div>
+<h2 class="font-headline-md text-headline-md font-bold text-primary">Statutory Legal Title &amp; Conveyancing Dossier</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Validated against Lagos Alausa Lands Bureau and FCT Abuja Geographic Information Systems (AGIS).</p>
+</div>
+</div>
+<span class="font-label-caps text-label-caps px-2 py-1 rounded bg-secondary text-on-secondary font-bold">SOVEREIGN GUARANTEED</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold">Statutory Title Instrument <span class="text-error">*</span></label>
+<select class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary outline-none transition-all">
+<option selected="">Governor's Consent (Lagos State Lands Registry Validated)</option>
+<option>Certificate of Occupancy (FCT AGIS / Lagos State C of O)</option>
+<option>Government Gazette (#44 Vol 21 Approved Excision)</option>
+<option>Registered Cadastral Survey &amp; Excision in Progress</option>
+<option>Federal Government Allocation &amp; Deed of Sublease</option>
+</select>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold">Lands Registry Reference Dossier Number <span class="text-error">*</span></label>
+<input class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-low text-on-surface font-mono font-semibold focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary outline-none transition-all" placeholder="e.g. LND/EP/2024/0984-CO" type="text" value="AL-REG/EP/2024/0984-GC-VOL-12"/>
+</div>
+<!-- Document Upload Drops with High Veracity Badging -->
+<div class="md:col-span-2 flex flex-col gap-space-sm">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Mandatory Institutional Deeds &amp; Surveys (High-Resolution Cryptographic Vault)</span>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Red Copy Survey Plan -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between gap-space-sm text-center group hover:bg-surface-container transition-all">
+<div class="flex flex-col items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[32px]">picture_as_pdf</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Registered Red Copy Survey</span>
+<span class="font-label-caps text-label-caps text-on-tertiary-container bg-tertiary-fixed/30 px-1.5 py-0.5 rounded font-bold mt-1">SURVEYOR GENERAL SEALED</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-left p-2 rounded bg-surface-container-lowest">
+<span class="font-label-caps text-label-caps text-on-surface truncate">Survey_Pln_EP_984.pdf</span>
+<span class="material-symbols-outlined text-on-tertiary-container text-[18px]">verified</span>
+</div>
+</div>
+<!-- Certified True Copy of Title -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between gap-space-sm text-center group hover:bg-surface-container transition-all">
+<div class="flex flex-col items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[32px]">gavel</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Gov. Consent CTC Copy</span>
+<span class="font-label-caps text-label-caps text-on-tertiary-container bg-tertiary-fixed/30 px-1.5 py-0.5 rounded font-bold mt-1">ALAUSA CONVEYED</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-left p-2 rounded bg-surface-container-lowest">
+<span class="font-label-caps text-label-caps text-on-surface truncate">Gov_Consent_Vol12.pdf</span>
+<span class="material-symbols-outlined text-on-tertiary-container text-[18px]">verified</span>
+</div>
+</div>
+<!-- Drag & Drop Uploader -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col items-center justify-center gap-2 text-center cursor-pointer hover:bg-surface-container transition-all">
+<span class="material-symbols-outlined text-on-surface-variant text-[28px]">cloud_upload</span>
+<span class="font-label-md text-label-md font-bold text-secondary">Upload Soil &amp; EIA Report</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">PDF, TIFF, max 45MB</span>
+</div>
+</div>
+</div>
+<!-- Zero Omo-Onile Statutory Guarantee Switch -->
+<div class="md:col-span-2 p-space-md rounded-xl bg-primary text-on-primary flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-tertiary-fixed text-[26px]">shield_with_heart</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-bold text-primary-fixed leading-tight">Zero "Omo-Onile" Statutory Indemnity Guarantee</span>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim mt-0.5">Underwritten by Veritas Sovereign Trust Legal Conveyancing Syndicate with full civil indemnification warranty for diaspora buyers.</p>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-14 h-7 bg-primary-container peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface-container-lowest after:content-[''] after:absolute after:top-[2px] after:left-[4px] after:bg-surface-container-lowest after:rounded-full after:h-6 after:w-6 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+</div>
+</div>
+<!-- SECTION 4: PRICING, CURRENCY MATRIX & CONVEYANCING FEES -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between pb-space-md mb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="p-2 rounded-lg bg-surface-container text-secondary material-symbols-outlined text-[24px]">payments</span>
+<div>
+<h2 class="font-headline-md text-headline-md font-bold text-primary">Financial Valuation, Installments &amp; Escrow</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Dual-currency multi-tier amortization with automated foreign remittance hedging.</p>
+</div>
+</div>
+<span class="font-label-caps text-label-caps px-2 py-1 rounded bg-secondary-fixed text-primary font-bold">ESCROW SECURED</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Naira Base Price -->
+<div class="flex flex-col gap-1.5 p-space-md bg-surface-container-low rounded-xl">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold flex items-center justify-between">
+<span>Base Outright Price (₦ NGN)</span>
+<span class="font-label-caps text-label-caps text-on-tertiary-container bg-tertiary-fixed/30 px-1.5 py-0.5 rounded font-bold">500 SQM BASE</span>
+</label>
+<div class="relative">
+<span class="absolute left-3 top-2.5 font-price-display text-price-display text-primary font-extrabold leading-none">₦</span>
+<input class="w-full pl-9 pr-space-md py-2.5 rounded-lg bg-surface-container-lowest text-primary font-price-display text-price-display font-extrabold focus:ring-2 focus:ring-secondary outline-none" type="text" value="38,500,000"/>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Thirty-Eight Million, Five Hundred Thousand Naira Only</span>
+</div>
+<!-- Diaspora Auto Conversion -->
+<div class="flex flex-col gap-1.5 p-space-md bg-surface-container rounded-xl">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold flex items-center justify-between">
+<span>Automated Diaspora Dollar Hedging</span>
+<span class="font-label-caps text-label-caps text-secondary font-bold">CBN FIX ₦1,495.50</span>
+</label>
+<div class="relative">
+<span class="absolute left-3 top-2.5 font-price-display text-price-display text-secondary font-extrabold leading-none">$</span>
+<input class="w-full pl-9 pr-space-md py-2.5 rounded-lg bg-surface-container-lowest text-secondary font-price-display text-price-display font-extrabold outline-none cursor-default" readonly="" type="text" value="25,743.90 USD"/>
+</div>
+<div class="flex items-center justify-between font-label-caps text-label-caps text-on-surface-variant">
+<span>British Pound Equivalent: £20,157 GBP</span>
+<span class="text-tertiary-container font-bold">Direct SWIFT Escrow</span>
+</div>
+</div>
+<!-- Installment Options Switchboard -->
+<div class="md:col-span-2 flex flex-col gap-space-sm p-space-md bg-surface-container-low rounded-xl">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Structured Institutional Installment Options</span>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="p-space-sm rounded-lg bg-surface-container-lowest flex items-start gap-space-sm">
+<input checked="" class="accent-secondary h-5 w-5 mt-1" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-primary">6-Month Zero-Interest Allocation</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[13px]">Initial ₦10,000,000 deposit; balanced into 5 consecutive monthly tranches of ₦5,700,000.</p>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-lowest flex items-start gap-space-sm">
+<input checked="" class="accent-secondary h-5 w-5 mt-1" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-primary">12-Month Extended Amortization</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[13px]">Initial ₦5,000,000 down-payment; monthly structured tranches of ₦3,040,000 with title escrow.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Attach Promo Engine Tier -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold">Attach Promotional / Incentive Rule</label>
+<select class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary outline-none transition-all">
+<option selected="">Early-Bird Outright Settlement (-10% Discount Campaign)</option>
+<option>Diaspora Legal Subsidy (₦500,000 Conveyancing Credit)</option>
+<option>Independence Infrastructure Bundle (Free Deed + Registered Survey)</option>
+<option>No Active Promotional Rule (Market Benchmark)</option>
+</select>
+</div>
+<!-- Hidden Fee Warranty Checkbox -->
+<div class="flex items-center gap-space-sm p-space-md bg-surface-container rounded-xl">
+<input checked="" class="accent-secondary h-5 w-5 shrink-0" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-primary">Zero Hidden Ancillary Fees Covenant</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">All documentation, registered survey, and developmental levies are declared without unstated extortion.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT 35% STICKY INSPECTION PREVIEW & VALIDATION MATRIX -->
+<div class="xl:col-span-4 flex flex-col gap-space-lg sticky top-24">
+<!-- Live Marketplace Card Rendering -->
+<div class="bg-surface-container-lowest rounded-xl shadow-md overflow-hidden">
+<div class="p-space-md bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">public</span>
+<span class="font-label-caps text-label-caps font-bold text-on-surface uppercase tracking-wider">Live Public Viewport Preview</span>
+</div>
+<span class="font-label-caps text-label-caps px-2 py-0.5 rounded-full bg-tertiary-container text-on-tertiary font-bold">SYNCHRONIZED</span>
+</div>
+<!-- Rendered Card Container -->
+<div class="p-space-md">
+<div class="relative w-full h-52 rounded-xl overflow-hidden shadow-sm bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Expansive panoramic view of prime green estate land in Epe Lagos with paved modern concrete spine roads, contemporary perimeter security gatehouse, lush landscaping, blue clear tropical sky, institutional real estate development photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKiUbzxCzlS4eIFF2qvVP78YOm6J0Xx0u5IBEKxVlfnTJrXuMJhzTXphcjGerDJu4jGS61OLUEyxRde6iZB7U5PLpkjCoRW0bNDGRvvc6ZfJJBRWBc8ckQBimsQ_u0DJodepJiPoGqLLnDC5ScOjrQROQo6LU5a-4Pe0KP2aWnIJuoBX8jZRIjKPXynPgBVRyTsW16lcZ-yGHC5nZ4VLVFkOT_mDSBTDcOAGIjvqq52iirvYeOFPFm5w"/>
+<!-- Badge Scrim (Top-Left) -->
+<div class="absolute top-3 left-3 flex flex-col gap-1">
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-surface-container-lowest/90 backdrop-blur-md shadow-sm">
+<span class="material-symbols-outlined text-on-tertiary-container text-[16px]">verified</span>
+<span class="font-label-caps text-label-caps text-on-tertiary-container font-extrabold uppercase">Governor's Consent</span>
+</div>
+<div class="flex items-center gap-1 px-2 py-0.5 rounded-md bg-primary/80 backdrop-blur-md text-on-primary">
+<span class="material-symbols-outlined text-[12px]">foundation</span>
+<span class="font-label-caps text-label-caps font-semibold">100% Dry Table Land</span>
+</div>
+</div>
+<!-- Instant Allocation Badge (Top-Right) -->
+<div class="absolute top-3 right-3 px-2.5 py-1 rounded-lg bg-secondary text-on-secondary font-label-caps text-label-caps font-extrabold shadow-sm">
+              PHASE 3 READY
+            </div>
+<!-- Price Gradient Floor Scrim -->
+<div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent p-space-md flex items-end justify-between text-on-primary">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-primary-fixed-dim uppercase tracking-wider">Starting Outright</span>
+<span class="font-price-display text-price-display font-extrabold leading-none text-surface-container-lowest">₦38,500,000</span>
+</div>
+<div class="flex flex-col text-right">
+<span class="font-label-caps text-label-caps text-primary-fixed-dim uppercase">Diaspora Equivalent</span>
+<span class="font-label-md text-label-md font-bold text-tertiary-fixed">~$25,743 USD</span>
+</div>
+</div>
+</div>
+<!-- Card Metadata Details -->
+<div class="flex flex-col gap-space-sm pt-space-md">
+<div class="flex items-start justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary leading-tight">The Sovereign Heritage Crest</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">location_on</span>
+                  Epe Expressway Megacity Corridor, Lagos
+                </span>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-2 py-space-sm bg-surface-container-low rounded-lg text-center mt-1">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant">TYPOLOGY</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">500 SQM</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant">TITLE DEED</span>
+<span class="font-label-md text-label-md font-bold text-on-tertiary-container">Gov Consent</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant">ALLOCATION</span>
+<span class="font-label-md text-label-md font-bold text-secondary">Immediate</span>
+</div>
+</div>
+<!-- Virtual Inspection Booking Preview CTA -->
+<div class="grid grid-cols-2 gap-2 mt-1">
+<button class="py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-bold flex items-center justify-center gap-1.5 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+<span>Book Inspection</span>
+</button>
+<button class="py-2.5 rounded-lg bg-surface-container text-secondary hover:bg-surface-container-high font-label-md text-label-md font-bold flex items-center justify-center gap-1.5 transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">description</span>
+<span>Get Dossier</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Statutory Publishing Readiness Checklist Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">checklist_rtl</span>
+<span class="font-headline-sm text-[16px] font-bold text-primary">Conveyancing Audit Checklist</span>
+</div>
+<span class="font-label-caps text-label-caps px-2 py-0.5 rounded-full bg-secondary-fixed text-primary font-bold">3 of 5 READY</span>
+</div>
+<div class="flex flex-col gap-2.5 mt-space-sm">
+<div class="flex items-center justify-between p-space-sm bg-surface-container-low rounded-lg">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-tertiary-container text-[20px]">check_circle</span>
+<span class="font-body-sm text-body-sm font-medium text-on-surface">Registered Survey Coordinates</span>
+</div>
+<span class="font-label-caps text-label-caps font-bold text-on-tertiary-container">VERIFIED</span>
+</div>
+<div class="flex items-center justify-between p-space-sm bg-surface-container-low rounded-lg">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-tertiary-container text-[20px]">check_circle</span>
+<span class="font-body-sm text-body-sm font-medium text-on-surface">Alausa Lands Bureau Record Linked</span>
+</div>
+<span class="font-label-caps text-label-caps font-bold text-on-tertiary-container">CONFIRMED</span>
+</div>
+<div class="flex items-center justify-between p-space-sm bg-surface-container-low rounded-lg">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-tertiary-container text-[20px]">check_circle</span>
+<span class="font-body-sm text-body-sm font-medium text-on-surface">100% Dry Topography Hydrology</span>
+</div>
+<span class="font-label-caps text-label-caps font-bold text-on-tertiary-container">CERTIFIED</span>
+</div>
+<div class="flex items-center justify-between p-space-sm bg-surface-container rounded-lg">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">pending</span>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">High-Res Drone Imagery (2/5)</span>
+</div>
+<span class="font-label-caps text-label-caps font-bold text-secondary">INCOMPLETE</span>
+</div>
+<div class="flex items-center justify-between p-space-sm bg-surface-container rounded-lg">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">draw</span>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Legal Solicitor Sign-Off Seal</span>
+</div>
+<span class="font-label-caps text-label-caps font-bold text-secondary">AWAITING</span>
+</div>
+</div>
+<!-- Primary Publication Trigger Buttons -->
+<div class="flex flex-col gap-space-sm mt-space-md pt-space-sm">
+<button onclick="handlePublish()" class="w-full py-3 rounded-lg bg-primary hover:bg-secondary text-on-primary font-headline-sm text-[16px] font-bold flex items-center justify-center gap-2 shadow-lg transition-all" type="button">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+<span>Publish Directly to Marketplace</span>
+</button>
+<button onclick="handleSchedule()" class="w-full py-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg font-semibold flex items-center justify-center gap-2 transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">schedule</span>
+<span>Schedule Automated Embargo Launch</span>
+</button>
+</div>
+<div class="mt-space-sm text-center">
+<span class="font-label-caps text-label-caps text-on-surface-variant flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+            Cryptographically signed under SCUML License #084920
+          </span>
+</div>
+</div>
+</div>
+</div></main></div>
+
+<!-- Publish Success Modal -->
+<div id="publishSuccessModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/70 backdrop-blur-sm hidden">
+  <div class="bg-surface-container-lowest border border-surface-container-high rounded-2xl max-w-lg w-full p-6 sm:p-8 shadow-2xl transform transition-all text-center">
+    <div class="w-16 h-16 rounded-2xl bg-tertiary-fixed/30 text-on-tertiary-fixed-variant flex items-center justify-center mx-auto mb-5">
+      <span class="material-symbols-outlined text-[36px]">verified</span>
+    </div>
+    
+    <span class="inline-block font-label-caps text-label-caps uppercase tracking-wider px-3 py-1 rounded-full bg-secondary-fixed text-primary font-bold mb-2">Alausa Cadastre Registered</span>
+    <h3 class="font-headline-md text-headline-md font-bold text-primary mb-2">Listing Successfully Published!</h3>
+    <p class="font-body-md text-body-md text-on-surface-variant mb-6 text-left sm:text-center">
+      The cadastral dossier has been cryptographically sealed under SCUML #084920 and propagated to the Veritas Prime Institutional Marketplace.
+    </p>
+
+    <!-- Details Summary Card -->
+    <div class="bg-surface-container-low rounded-xl p-4 mb-6 text-left text-body-sm font-body-sm space-y-2 border border-surface-container">
+      <div class="flex justify-between">
+        <span class="text-on-surface-variant font-medium">Estate Name:</span>
+        <span class="text-on-surface font-bold">The Sovereign Heritage Crest</span>
+      </div>
+      <div class="flex justify-between">
+        <span class="text-on-surface-variant font-medium">Cadastral Ref:</span>
+        <span class="font-mono text-secondary font-bold">VP-LND-2025-089</span>
+      </div>
+      <div class="flex justify-between">
+        <span class="text-on-surface-variant font-medium">Statutory Corridor:</span>
+        <span class="text-on-surface font-semibold">Epe Expressway, Lagos</span>
+      </div>
+      <div class="flex justify-between">
+        <span class="text-on-surface-variant font-medium">Market Status:</span>
+        <span class="text-on-tertiary-container font-bold flex items-center gap-1">
+          <span class="w-2 h-2 rounded-full bg-tertiary-fixed inline-block"></span> Live on Marketplace
+        </span>
+      </div>
+    </div>
+
+    <div class="flex flex-col sm:flex-row gap-3">
+      <a href="property-details.html" class="flex-1 py-3 px-4 rounded-lg bg-primary hover:bg-secondary text-on-primary font-label-lg text-label-lg font-bold transition-all text-center flex items-center justify-center gap-2 shadow-md">
+        <span class="material-symbols-outlined text-[18px]">visibility</span>
+        <span>View Live Dossier</span>
+      </a>
+      <a href="admin-dashboard.html" class="flex-1 py-3 px-4 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg font-bold transition-all text-center flex items-center justify-center gap-2">
+        <span class="material-symbols-outlined text-[18px]">dashboard</span>
+        <span>Back to Operations</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Draft / Schedule Toast Notification -->
+<div id="actionToast" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none max-w-md bg-surface-container-lowest border border-surface-container-high rounded-xl p-4 shadow-2xl flex items-center gap-3">
+  <div id="toastIconContainer" class="w-10 h-10 rounded-lg bg-secondary-fixed/40 text-secondary flex items-center justify-center shrink-0">
+    <span id="toastIcon" class="material-symbols-outlined text-[22px]">save</span>
+  </div>
+  <div class="flex flex-col">
+    <span id="toastTitle" class="font-headline-sm text-[15px] font-bold text-on-surface">Draft Saved</span>
+    <span id="toastMessage" class="font-body-sm text-body-sm text-on-surface-variant">Changes saved locally to session cache.</span>
+  </div>
+</div>
+
+<script>
+  function handlePublish() {
+    const modal = document.getElementById('publishSuccessModal');
+    if (modal) {
+      modal.classList.remove('hidden');
+    }
+  }
+
+  function showToast(title, message, icon) {
+    const toast = document.getElementById('actionToast');
+    const toastTitle = document.getElementById('toastTitle');
+    const toastMessage = document.getElementById('toastMessage');
+    const toastIcon = document.getElementById('toastIcon');
+
+    if (toastTitle) toastTitle.textContent = title;
+    if (toastMessage) toastMessage.textContent = message;
+    if (toastIcon) toastIcon.textContent = icon || 'check_circle';
+
+    if (toast) {
+      toast.classList.remove('translate-y-20', 'opacity-0');
+      setTimeout(() => {
+        toast.classList.add('translate-y-20', 'opacity-0');
+      }, 4000);
+    }
+  }
+
+  function handleSaveDraft() {
+    showToast('Draft Encrypted & Saved', 'Cadastral attributes cached. You can resume editing anytime.', 'save');
+  }
+
+  function handleSchedule() {
+    showToast('Embargo Scheduled', 'Listing queued for publication at tomorrow 08:00 AM WAT.', 'schedule');
+  }
+
+  // Mobile Sidebar Toggle
+  const sidebar = document.getElementById('sidebar');
+  const sidebarToggle = document.getElementById('sidebar-toggle-btn');
+  const sidebarClose = document.getElementById('sidebar-close-btn');
+  const sidebarBackdrop = document.getElementById('sidebar-backdrop');
+
+  function openSidebar() {
+    if (sidebar) sidebar.classList.remove('-translate-x-full');
+    if (sidebarBackdrop) sidebarBackdrop.classList.remove('hidden');
+    document.body.classList.add('overflow-hidden');
+  }
+  function closeSidebar() {
+    if (sidebar) sidebar.classList.add('-translate-x-full');
+    if (sidebarBackdrop) sidebarBackdrop.classList.add('hidden');
+    document.body.classList.remove('overflow-hidden');
+  }
+
+  if (sidebarToggle) sidebarToggle.addEventListener('click', openSidebar);
+  if (sidebarClose) sidebarClose.addEventListener('click', closeSidebar);
+  if (sidebarBackdrop) sidebarBackdrop.addEventListener('click', closeSidebar);
+</script>
+</body></html>
