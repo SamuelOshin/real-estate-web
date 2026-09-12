@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none" role="img" aria-labelledby="crest-title crest-desc">
+  <title id="crest-title">Sovereign Crest Logo Mark</title>
+  <desc id="crest-desc">Institutional shield with architectural pillars and emerald title verification beacon</desc>
+  <defs>
+    <linearGradient id="shieldNavy" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B3C68" />
+      <stop offset="100%" stop-color="#06223D" />
+    </linearGradient>
+    <linearGradient id="shieldCobalt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="100%" stop-color="#1A56DB" />
+    </linearGradient>
+    <linearGradient id="beaconEmerald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <filter id="softGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0B3C68" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Outer Protective Shield Silhouette -->
+  <path d="M32 4 L54 11.5 V30 C54 43.5 32 58 32 58 C32 58 10 43.5 10 30 V11.5 L32 4 Z" 
+        fill="url(#shieldNavy)" 
+        filter="url(#softGlow)" />
+
+  <!-- Shield Inset Facet Right (Cobalt illumination) -->
+  <path d="M32 5.5 L52 12.5 V30 C52 42.2 32 55.5 32 55.5 V5.5 Z" 
+        fill="url(#shieldCobalt)" 
+        opacity="0.22" />
+
+  <!-- Shield Inner Border -->
+  <path d="M32 7.5 L50.5 14 V29.5 C50.5 40.5 32 53 32 53 C32 53 13.5 40.5 13.5 29.5 V14 L32 7.5 Z" 
+        stroke="#FFFFFF" 
+        stroke-opacity="0.15" 
+        stroke-width="1.2" 
+        fill="none" />
+
+  <!-- Architectural Bastion / Sovereign Spire (White core) -->
+  <path d="M32 14 L41 22.5 V42 C38 44.5 35 46.5 32 47.8 C29 46.5 26 44.5 23 42 V22.5 L32 14 Z" 
+        fill="#FFFFFF" />
+
+  <!-- Classical Trust Columns (Negative Space in Spire) -->
+  <rect x="26.5" y="26.5" width="3" height="13" rx="1.2" fill="#0B3C68" />
+  <rect x="34.5" y="26.5" width="3" height="13" rx="1.2" fill="#0B3C68" />
+
+  <!-- Keystone Arch / Center Gate -->
+  <path d="M30 39.5 H34 V35 C34 33.9 33.1 33 32 33 C30.9 33 30 33.9 30 35 V39.5 Z" 
+        fill="#1A56DB" />
+
+  <!-- Verified Title Deed Emerald Beacon (Governor's Consent / C of O Diamond) -->
+  <path d="M32 17 L36 21.5 L32 26 L28 21.5 Z" 
+        fill="url(#beaconEmerald)" />
+  <circle cx="32" cy="21.5" r="1.2" fill="#FFFFFF" opacity="0.9" />
+
+  <!-- Cadastral Foundation Survey Mark (Base line) -->
+  <path d="M23 44.5 L32 48.5 L41 44.5" 
+        stroke="#1A56DB" 
+        stroke-width="1.8" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" />
+</svg>

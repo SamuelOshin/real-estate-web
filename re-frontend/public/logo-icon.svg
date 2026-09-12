@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none" role="img" aria-labelledby="icon-title icon-desc">
+  <title id="icon-title">Prison Gihon Cadastral Beacon Icon</title>
+  <desc id="icon-desc">Isometric architectural beacon representing surveyed land parcel and sovereign foundation</desc>
+  <defs>
+    <linearGradient id="iTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6" />
+      <stop offset="100%" stop-color="#1D4ED8" />
+    </linearGradient>
+    <linearGradient id="iLeft" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0B3C68" />
+      <stop offset="100%" stop-color="#061C33" />
+    </linearGradient>
+    <linearGradient id="iRight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="100%" stop-color="#1A56DB" />
+    </linearGradient>
+    <linearGradient id="iEmerald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+  </defs>
+
+  <!-- TOP FACET (Land Parcel Surface) -->
+  <path d="M32 7 L52 18 L32 29 L12 18 Z" fill="url(#iTop)" />
+
+  <!-- Title Verification Diamond (Alausa & AGIS Cadastral Seal) -->
+  <path d="M32 12 L39 18 L32 24 L25 18 Z" fill="url(#iEmerald)" stroke="#FFFFFF" stroke-width="1.2" />
+  <circle cx="32" cy="18" r="1.5" fill="#FFFFFF" />
+
+  <!-- LEFT FACET (Fortress Foundation - Navy) -->
+  <path d="M12 21.5 L30 31.8 V55.5 L12 45 Z" fill="url(#iLeft)" />
+  <path d="M18 28.5 L24 32 V47.5 L18 44 Z" fill="#FFFFFF" opacity="0.15" />
+
+  <!-- RIGHT FACET (Ascending Structure - Cobalt) -->
+  <path d="M34 31.8 L52 21.5 V45 L34 55.5 Z" fill="url(#iRight)" />
+  <path d="M40 32 L46 28.5 V44 L40 47.5 Z" fill="#FFFFFF" opacity="0.2" />
+
+  <!-- Center Demarcation Line -->
+  <line x1="32" y1="29" x2="32" y2="57" stroke="#061C33" stroke-width="1.5" opacity="0.3" />
+</svg>

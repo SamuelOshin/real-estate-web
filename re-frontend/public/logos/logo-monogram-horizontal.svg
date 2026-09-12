@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 60" width="300" height="60" fill="none" role="img" aria-labelledby="mono-h-title">
+  <title id="mono-h-title">Prison Gihon Monogram Logo (Horizontal)</title>
+  <defs>
+    <linearGradient id="mhNavy" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0B3C68" />
+      <stop offset="100%" stop-color="#06223D" />
+    </linearGradient>
+    <linearGradient id="mhCobalt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="100%" stop-color="#1A56DB" />
+    </linearGradient>
+    <linearGradient id="mhEmerald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+  </defs>
+
+  <!-- LOGO MARK -->
+  <g transform="translate(6, 4) scale(0.8125)">
+    <path d="M12 10 H34 C43 10 50 16.5 50 25 C50 33.5 43 40 34 40 H24 V54 H12 V10 Z M24 20 V30 H33 C36 30 38.5 28 38.5 25 C38.5 22 36 20 33 20 H24 Z" fill="url(#mhNavy)" />
+    <path d="M26 36 H38 V44 H28 C26.5 44 25.5 45.2 25.5 46.5 C25.5 47.8 26.5 49 28 49 H44 C47.3 49 50 46.3 50 43 V34 H54 V43 C54 48.5 49.5 53 44 53 H28 C24 53 20.5 50.5 19.5 46.8 L26 36 Z" fill="url(#mhCobalt)" />
+    <path d="M34 16 L38.5 21 L34 26 L29.5 21 Z" fill="url(#mhEmerald)" />
+    <circle cx="34" cy="21" r="1.2" fill="#FFFFFF" />
+    <rect x="12" y="52" width="42" height="3" rx="1.5" fill="#1A56DB" opacity="0.3" />
+  </g>
+
+  <!-- LOGOTYPE -->
+  <g transform="translate(68, 0)">
+    <text x="0" y="32" font-family="'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="21" letter-spacing="-0.025em">
+      <tspan fill="#0B3C68">PRISON</tspan>
+      <tspan fill="#1A56DB" dx="4">GIHON</tspan>
+    </text>
+    
+    <g transform="translate(0, 46)">
+      <circle cx="3.5" cy="-3.5" r="2.5" fill="#059669" />
+      <text x="10" y="0" font-family="'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="8.5" letter-spacing="0.08em" fill="#475467">
+        GLOBAL REAL ESTATE SERVICES
+      </text>
+    </g>
+  </g>
+</svg>

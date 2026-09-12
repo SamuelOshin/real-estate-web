@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150" fill="none" role="img" aria-labelledby="bv-title">
+  <title id="bv-title">Prison Gihon Cadastral Beacon Logo (Vertical Stacked)</title>
+  <defs>
+    <linearGradient id="bvTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6" />
+      <stop offset="100%" stop-color="#1D4ED8" />
+    </linearGradient>
+    <linearGradient id="bvLeft" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0B3C68" />
+      <stop offset="100%" stop-color="#061C33" />
+    </linearGradient>
+    <linearGradient id="bvRight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="100%" stop-color="#1A56DB" />
+    </linearGradient>
+    <linearGradient id="bvEmerald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+  </defs>
+
+  <!-- LOGO MARK (Centered horizontally at x=100, y=8) -->
+  <g transform="translate(68, 8)">
+    <path d="M32 7 L52 18 L32 29 L12 18 Z" fill="url(#bvTop)" />
+    <path d="M32 12 L39 18 L32 24 L25 18 Z" fill="url(#bvEmerald)" stroke="#FFFFFF" stroke-width="1.2" />
+    <circle cx="32" cy="18" r="1.5" fill="#FFFFFF" />
+    <path d="M12 21.5 L30 31.8 V55.5 L12 45 Z" fill="url(#bvLeft)" />
+    <path d="M18 28.5 L24 32 V47.5 L18 44 Z" fill="#FFFFFF" opacity="0.15" />
+    <path d="M34 31.8 L52 21.5 V45 L34 55.5 Z" fill="url(#bvRight)" />
+    <path d="M40 32 L46 28.5 V44 L40 47.5 Z" fill="#FFFFFF" opacity="0.2" />
+    <line x1="32" y1="29" x2="32" y2="57" stroke="#061C33" stroke-width="1.5" opacity="0.3" />
+  </g>
+
+  <!-- LOGOTYPE (Centered) -->
+  <text x="100" y="100" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="20" letter-spacing="-0.025em">
+    <tspan fill="#0B3C68">PRISON </tspan>
+    <tspan fill="#1A56DB">GIHON</tspan>
+  </text>
+  
+  <text x="100" y="118" text-anchor="middle" font-family="'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="8" letter-spacing="0.12em" fill="#475467">
+    GLOBAL SERVICES LIMITED
+  </text>
+
+  <g transform="translate(100, 132)">
+    <circle cx="-56" cy="-2.5" r="2" fill="#059669" />
+    <text x="0" y="0" text-anchor="middle" font-family="'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="7.5" letter-spacing="0.06em" fill="#059669">
+      VERIFIED SOVEREIGN LAND TITLES
+    </text>
+    <circle cx="56" cy="-2.5" r="2" fill="#059669" />
+  </g>
+</svg>
