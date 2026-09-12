@@ -8,10 +8,12 @@ import { motion, AnimatePresence } from "framer-motion";
 import { siteConfig } from "@/config/site.config";
 import { cn } from "@/lib/utils/cn";
 import { transitions } from "@/lib/motion/transitions";
+import { useAuth } from "@/features/auth/hooks/useAuth";
 
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const pathname = usePathname();
+  const { user } = useAuth();
 
   return (
     <>
@@ -129,19 +131,22 @@ export function Header() {
             <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} transition={transitions.snappy}>
               <Link
                 href="/contact"
-                className="hidden sm:inline-flex items-center justify-center border border-border text-secondary bg-surface-tint hover:bg-surface-tint-strong font-semibold px-4 py-2.5 rounded-lg text-xs transition-colors font-body shadow-xs"
+                className="inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white font-semibold px-4 py-2.5 rounded-lg text-xs transition-colors shadow-sm font-body"
               >
                 Schedule Inspection
               </Link>
             </motion.div>
-            <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} transition={transitions.snappy}>
-              <Link
-                href="/admin/dashboard"
-                className="inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white font-semibold px-4 py-2.5 rounded-lg text-xs transition-colors shadow-sm font-body"
-              >
-                Admin Portal
-              </Link>
-            </motion.div>
+            {user && (
+              <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} transition={transitions.snappy}>
+                <Link
+                  href="/admin/dashboard"
+                  className="inline-flex items-center gap-1.5 border border-primary/20 text-primary bg-surface-tint hover:bg-surface-tint-strong font-semibold px-3.5 py-2.5 rounded-lg text-xs transition-colors shadow-xs font-body"
+                >
+                  <span className="material-symbols-outlined text-[15px]">dashboard</span>
+                  <span>Admin Portal</span>
+                </Link>
+              </motion.div>
+            )}
 
             {/* Mobile Menu Toggle Button */}
             <button
@@ -197,17 +202,19 @@ export function Header() {
                 <Link
                   href="/contact"
                   onClick={() => setMobileOpen(false)}
-                  className="w-full text-center py-2.5 px-4 rounded-lg text-sm font-semibold text-secondary bg-surface-tint hover:bg-surface-tint-strong transition-colors font-body"
+                  className="w-full text-center py-2.5 px-4 rounded-lg text-sm font-semibold text-white bg-primary hover:bg-primary-hover transition-colors font-body shadow-sm"
                 >
                   Schedule Inspection
                 </Link>
-                <Link
-                  href="/admin/dashboard"
-                  onClick={() => setMobileOpen(false)}
-                  className="w-full text-center py-2.5 px-4 rounded-lg text-sm font-semibold text-white bg-primary hover:bg-primary-hover transition-colors font-body"
-                >
-                  Admin Portal
-                </Link>
+                {user && (
+                  <Link
+                    href="/admin/dashboard"
+                    onClick={() => setMobileOpen(false)}
+                    className="w-full text-center py-2.5 px-4 rounded-lg text-sm font-semibold text-primary bg-surface-tint hover:bg-surface-tint-strong transition-colors font-body border border-primary/20"
+                  >
+                    Admin Portal
+                  </Link>
+                )}
               </div>
             </motion.div>
           )}

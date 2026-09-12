@@ -166,10 +166,11 @@ export default async function HomePage() {
         <div className="relative w-full min-h-[500px] sm:min-h-[580px] lg:min-h-[620px] flex flex-col justify-between items-center text-center px-6 pt-14 sm:pt-20 pb-28 sm:pb-32 overflow-hidden bg-primary">
           {/* Panoramic Architecture Photography */}
           <Image
-            src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=2560&q=85"
+            src="/hero-estate.jpg"
             alt={`${siteConfig.name} Masterplanned Real Estate`}
             fill
             priority
+            sizes="100vw"
             className="object-cover object-center"
           />
 

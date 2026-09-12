@@ -27,13 +27,13 @@ const MOCK_USER_LOOKUP: Record<string, Omit<AuthUser, "id">> = {
 export async function GET(request: NextRequest) {
   const token = request.cookies.get(AUTH_COOKIE_NAME)?.value;
   if (!token) {
-    return NextResponse.json(null, { status: 401 });
+    return NextResponse.json(null);
   }
 
   const [userId] = Buffer.from(token, "base64").toString("utf-8").split(":");
   const found = MOCK_USER_LOOKUP[userId];
   if (!found) {
-    return NextResponse.json(null, { status: 401 });
+    return NextResponse.json(null);
   }
 
   const user: AuthUser = { id: userId, ...found };
